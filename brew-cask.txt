@@ -1,0 +1,11 @@
+alfred
+font-jetbrains-mono
+font-source-sans-pro
+github
+iterm2
+lastpass
+powershell
+slack
+spectacle
+sublime-text
+visual-studio-code
