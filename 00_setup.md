@@ -20,19 +20,21 @@ Direct link: https://download.developer.apple.com/Developer_Tools/Command_Line_T
     chmod +x install.sh 
     ./install.sh
     ```
-## brew apps
+## ~~brew apps~~
     Use the external file to install brew 
     brew install < brew-apps.txt
     
-    ~~apps="awscli bash cowsay curl fortune gdbm gettext git go htop jq libevent libzip ncurses oniguruma openssl@1.1 pcre2 python@3.8 readline sublime-text sqlite tldr tmux utf8proc vcprompt vim xz"
+    ```
+    apps="awscli bash cowsay curl fortune gdbm gettext git go htop jq libevent libzip ncurses oniguruma openssl@1.1 pcre2 python@3.8 readline sublime-text sqlite tldr tmux utf8proc vcprompt vim xz"
 
     for app in $apps; do
         brew install ${app}
     done
     
     brew install hashicorp/tap/terraform
-    brew install hashicorp/tap/vault~~
-## brew cask 
+    brew install hashicorp/tap/vault
+    ```
+## ~~brew cask~~
     ```
     brew install --cask alfred
     brew install --cask dropbox
