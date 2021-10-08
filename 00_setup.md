@@ -21,16 +21,17 @@ Direct link: https://download.developer.apple.com/Developer_Tools/Command_Line_T
     ./install.sh
     ```
 ## brew apps
-    ```
-    apps="awscli bash cowsay curl fortune gdbm gettext git go htop jq libevent libzip ncurses oniguruma openssl@1.1 pcre2 python@3.8 readline sublime-text sqlite tldr tmux utf8proc vcprompt vim xz"
+    Use the external file to install brew 
+    brew install < brew-apps.txt
+    
+    ~~apps="awscli bash cowsay curl fortune gdbm gettext git go htop jq libevent libzip ncurses oniguruma openssl@1.1 pcre2 python@3.8 readline sublime-text sqlite tldr tmux utf8proc vcprompt vim xz"
 
     for app in $apps; do
         brew install ${app}
     done
     
     brew install hashicorp/tap/terraform
-    brew install hashicorp/tap/vault
-    ```
+    brew install hashicorp/tap/vault~~
 ## brew cask 
     ```
     brew install --cask alfred
@@ -46,7 +47,6 @@ Direct link: https://download.developer.apple.com/Developer_Tools/Command_Line_T
     brew tap homebrew/cask-fonts
     brew install --cask font-jetbrains-mono font-source-sans-pro font-source-code-pro font-fira-code 
     ``` 
-
 ## Configure iterm2 
     Ctrl+,
     - Apperances -> General Tab -> Theme -> Minimal
@@ -69,6 +69,9 @@ Direct link: https://download.developer.apple.com/Developer_Tools/Command_Line_T
    defaults write com.apple.screencapture location ~/Desktop/Screen\ Shots
    defaults write com.apple.screencapture type -string "png"
    defaults write com.apple.screencapture disable-shadow -bool true
+   
+   # Show dotfiles in the finder
+   defaults write com.apple.finder AppleShowAllFiles true; killall Finder 
    
    # Avoid creating .DS_Store files on network or USB volumes
    defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
